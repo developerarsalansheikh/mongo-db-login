@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+.container {
+  height: 100vh;
+  background-color: aqua;
+  display: flex;
+}
+
+.login-section {
+  padding: 40px 20px;
+  width: 25%;
+  height: 100%;
+  background-color: white;
+}
+
+.image-section {
+  padding: 50px;
+  color: white;
+  width: 75%;
+  height: 100%;
+  background-image: url("./images/login_desktop.svg");
+  background-size: cover;
+}
+
+.image-section p {
+  margin: 20px 0px;
+  width: 45%;
+}
+
+.image-section a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+.login-section h1 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: "Noto Serif", serif;
+  color: #00634a;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.login-section p {
+  font-weight: 600;
+}
+
+.login-section a {
+  text-decoration: none;
+}
+
+.login-btns {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.login-btn {
+  padding: 10px 0px;
+  width: 100%;
+  margin: 10px 0px;
+  border: none;
+  border-radius: 2px;
+  border: 1px solid rgb(181, 181, 181);
+}
+
+.login-btns p {
+  font-size: 12px;
+  margin: 20px 0px;
+  font-weight: 400;
+  color: rgb(96, 95, 95);
+  width: 100%;
+  text-align: center;
+}
+
+.login-btns label {
+  font-size: 14px;
+}
+
+.login-btns input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgb(181, 181, 181);
+  border-radius: 5px;
+}
+
+.submit-btn {
+  margin-top: 60px;
+  padding: 5px 20px;
+  border: 1px solid rgb(181, 181, 181);
+  border-radius: 5px;
+}
+
+/* Media Query */
+
+@media (max-width: 768px) {
+  .login-section {
+    width: 100%;
+  }
+
+  .image-section {
+    display: none;
+  }
+}
